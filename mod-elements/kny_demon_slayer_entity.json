@@ -1,0 +1,14 @@
+{
+  "id": "kny_demon_slayer_entity",
+  "name": "KnY Demon Slayer Entity",
+  "description": "Describes KnY combat metadata for generated Demon Slayer or Demon entities.",
+  "fields": {
+    "entityType": "DEMON_SLAYER",
+    "registryName": "frost_slayer",
+    "breathingStyle": "frost_breathing",
+    "defaultSword": "nichirinsword_frost",
+    "canUseBreathingForms": true,
+    "isDemon": false
+  },
+  "registrationPhase": "entity_register_and_common_setup"
+}

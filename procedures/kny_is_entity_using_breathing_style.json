@@ -1,0 +1,14 @@
+{
+  "message0": "is %1 using breathing style id %2",
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "style_id", "check": "String" }
+  ],
+  "output": "Boolean",
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["entity", "style_id"]
+  }
+}

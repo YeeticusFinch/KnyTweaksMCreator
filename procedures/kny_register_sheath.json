@@ -1,0 +1,21 @@
+{
+  "message0": "register sheath sword item id %1 sheath item id %2 behavior %3",
+  "args0": [
+    { "type": "input_value", "name": "sword_item_id", "check": "String" },
+    { "type": "input_value", "name": "sheath_item_id", "check": "String" },
+    {
+      "type": "field_dropdown",
+      "name": "persists",
+      "options": [["persists when drawn", "true"], ["disappears when drawn", "false"]]
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["sword_item_id", "sheath_item_id"],
+    "fields": ["persists"]
+  }
+}

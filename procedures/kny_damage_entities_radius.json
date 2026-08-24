@@ -1,0 +1,27 @@
+{
+  "message0": "damage entities around %1 radius %2 damage %3 invulnerability %4 scaling %5",
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "radius", "check": "Number" },
+    { "type": "input_value", "name": "damage", "check": "Number" },
+    {
+      "type": "field_dropdown",
+      "name": "iframes",
+      "options": [["respect", "false"], ["ignore", "true"]]
+    },
+    {
+      "type": "field_dropdown",
+      "name": "scaling",
+      "options": [["default", "default"], ["never scale", "dont_scale"], ["force scale", "force_scale"]]
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["entity", "radius", "damage"],
+    "fields": ["iframes", "scaling"]
+  }
+}

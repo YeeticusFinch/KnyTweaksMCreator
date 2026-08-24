@@ -1,0 +1,12 @@
+{
+  "id": "kimetsunoyaibamultiplayer",
+  "supportedversions": [
+    2026002
+  ],
+  "info": {
+    "name": "Kimetsunoyaiba Tweaks",
+    "description": "MCreator integration for the Kimetsunoyaiba Tweaks API",
+    "author": "carl_alex",
+    "version": "1.0.0"
+  }
+}

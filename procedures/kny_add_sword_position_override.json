@@ -1,0 +1,20 @@
+{
+  "message0": "set sword item id %1 display position %2",
+  "args0": [
+    { "type": "input_value", "name": "item_id", "check": "String" },
+    {
+      "type": "field_dropdown",
+      "name": "position",
+      "options": [["hip", "HIP"], ["back", "BACK"]]
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["item_id"],
+    "fields": ["position"]
+  }
+}

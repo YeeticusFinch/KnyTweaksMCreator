@@ -1,0 +1,15 @@
+{
+  "message0": "dash %1 forward %2 blocks",
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "blocks", "check": "Number" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["entity", "blocks"]
+  }
+}

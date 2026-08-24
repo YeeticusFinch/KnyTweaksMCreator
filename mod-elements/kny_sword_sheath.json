@@ -1,0 +1,12 @@
+{
+  "id": "kny_sword_sheath",
+  "name": "KnY Sword Sheath",
+  "description": "Registers sheath display metadata and optional model/texture associations.",
+  "fields": {
+    "displayName": "Frost Sheath",
+    "registryName": "frost_sheath",
+    "texture": "frost_sheath.png",
+    "swordRegistryName": "nichirinsword_frost"
+  },
+  "registrationPhase": "deferred_register"
+}

@@ -1,0 +1,6 @@
+# Scaffold for the Java mod-element implementation.
+# Once the Java GUI layer serializes KnyNichirinSword data, this template should be emitted
+# during the item/DeferredRegister phase. Current KnYAPI.createSword requires a DeferredRegister.
+templates:
+  - template: kny/kny_nichirin_sword.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/kny/@NAMEKnyNichirinSword.java"

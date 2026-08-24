@@ -1,0 +1,16 @@
+{
+  "message0": "register slash model for sword item path %1 model key %2 namespace %3",
+  "args0": [
+    { "type": "input_value", "name": "sword_item_path", "check": "String" },
+    { "type": "input_value", "name": "model_key", "check": "String" },
+    { "type": "input_value", "name": "namespace", "check": "String" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["sword_item_path", "model_key", "namespace"]
+  }
+}

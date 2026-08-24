@@ -1,0 +1,13 @@
+{
+  "id": "kny_breathing_form",
+  "name": "KnY Breathing Form",
+  "description": "Defines a form that can call an MCreator procedure from its generated FormEffect handler.",
+  "fields": {
+    "formName": "First Form: Frozen Lake",
+    "description": "",
+    "formId": 4101,
+    "cooldownSeconds": 5,
+    "onUseProcedure": ""
+  },
+  "registrationPhase": "common_setup"
+}

@@ -1,0 +1,20 @@
+{
+  "message0": "register sword offsets for item id %1 translate x %2 y %3 z %4 rotate x %5 y %6 z %7",
+  "args0": [
+    { "type": "input_value", "name": "item_id", "check": "String" },
+    { "type": "input_value", "name": "translate_x", "check": "Number" },
+    { "type": "input_value", "name": "translate_y", "check": "Number" },
+    { "type": "input_value", "name": "translate_z", "check": "Number" },
+    { "type": "input_value", "name": "rotate_x", "check": "Number" },
+    { "type": "input_value", "name": "rotate_y", "check": "Number" },
+    { "type": "input_value", "name": "rotate_z", "check": "Number" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["item_id", "translate_x", "translate_y", "translate_z", "rotate_x", "rotate_y", "rotate_z"]
+  }
+}

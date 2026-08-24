@@ -1,0 +1,16 @@
+{
+  "message0": "apply bleeding to %1 level %2 for %3 ticks",
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "level", "check": "Number" },
+    { "type": "input_value", "name": "ticks", "check": "Number" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["entity", "level", "ticks"]
+  }
+}

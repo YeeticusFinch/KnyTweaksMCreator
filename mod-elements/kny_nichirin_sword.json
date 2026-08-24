@@ -1,0 +1,18 @@
+{
+  "id": "kny_nichirin_sword",
+  "name": "KnY Nichirin Sword",
+  "description": "Generates a Nichirin sword registration using the KnY API builder.",
+  "fields": {
+    "displayName": "Frost Nichirin Sword",
+    "registryName": "nichirinsword_frost",
+    "texture": "frost_sword.png",
+    "breathingStyle": "frost_breathing",
+    "swordLevel": 0,
+    "durability": 2000,
+    "styleRange": 4100,
+    "defaultParticle": "minecraft:snowflake",
+    "category": "NICHIRIN",
+    "sheath": ""
+  },
+  "registrationPhase": "deferred_register"
+}

@@ -1,0 +1,19 @@
+{
+  "message0": "spawn breathing slash %1 from %2 angle %3 offset x %4 y %5 z %6",
+  "args0": [
+    { "type": "input_value", "name": "slash_type", "check": "String" },
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "angle", "check": "Number" },
+    { "type": "input_value", "name": "offset_x", "check": "Number" },
+    { "type": "input_value", "name": "offset_y", "check": "Number" },
+    { "type": "input_value", "name": "offset_z", "check": "Number" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["slash_type", "entity", "angle", "offset_x", "offset_y", "offset_z"]
+  }
+}

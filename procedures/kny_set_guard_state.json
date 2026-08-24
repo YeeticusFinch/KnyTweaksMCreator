@@ -1,0 +1,17 @@
+{
+  "message0": "set guard state for %1 damage %2 guard %3 attack %4",
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" },
+    { "type": "input_value", "name": "damage", "check": "Number" },
+    { "type": "input_value", "name": "guard", "check": "Number" },
+    { "type": "input_value", "name": "attack", "check": "Number" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["entity", "damage", "guard", "attack"]
+  }
+}

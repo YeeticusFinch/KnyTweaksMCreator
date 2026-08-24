@@ -1,0 +1,14 @@
+{
+  "id": "kny_breathing_style",
+  "name": "KnY Breathing Style",
+  "description": "Registers a breathing style, style metadata, and its form list during common setup.",
+  "fields": {
+    "styleName": "Frost Breathing",
+    "registryId": "frost_breathing",
+    "styleRange": 4100,
+    "parentStyle": "",
+    "defaultParticle": "minecraft:snowflake",
+    "forms": []
+  },
+  "registrationPhase": "common_setup"
+}

@@ -1,0 +1,13 @@
+{
+  "message0": "currently equipped Nichirin sword of %1",
+  "args0": [
+    { "type": "input_value", "name": "entity", "check": "Entity" }
+  ],
+  "output": "ItemStack",
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["entity"]
+  }
+}

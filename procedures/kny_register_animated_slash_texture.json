@@ -1,0 +1,16 @@
+{
+  "message0": "register animated slash texture model key %1 frames %2 ticks per frame %3",
+  "args0": [
+    { "type": "input_value", "name": "model_key", "check": "String" },
+    { "type": "input_value", "name": "frame_count", "check": "Number" },
+    { "type": "input_value", "name": "ticks_per_frame", "check": "Number" }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["model_key", "frame_count", "ticks_per_frame"]
+  }
+}

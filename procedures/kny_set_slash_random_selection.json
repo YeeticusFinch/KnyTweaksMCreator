@@ -1,0 +1,20 @@
+{
+  "message0": "set slash model key %1 texture selection %2",
+  "args0": [
+    { "type": "input_value", "name": "model_key", "check": "String" },
+    {
+      "type": "field_dropdown",
+      "name": "use_random",
+      "options": [["animated", "false"], ["random", "true"]]
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "mcreator": {
+    "toolbox_id": "kny_breathing",
+    "required_apis": ["kny_tweaks"],
+    "inputs": ["model_key"],
+    "fields": ["use_random"]
+  }
+}

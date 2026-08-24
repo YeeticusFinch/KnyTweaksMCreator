@@ -1,0 +1,13 @@
+{
+  "id": "kny_breathing_form_variation",
+  "name": "KnY Breathing Form Variation",
+  "description": "Registers a variation after the base style and form exist.",
+  "fields": {
+    "variationId": "frost_breathing:1:1",
+    "baseFormId": 4101,
+    "variationIndex": 1,
+    "displayName": "Frozen Lake: Demonized",
+    "onUseProcedure": ""
+  },
+  "registrationPhase": "common_setup_after_forms"
+}
