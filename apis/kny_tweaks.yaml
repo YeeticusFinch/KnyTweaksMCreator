@@ -11,54 +11,7 @@ forge-1.20.1:
     }
 
     dependencies {
-        implementation fg.deobf("curse.maven:demonslayer-471263:7151280")
-        implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20.1:4.4.9")
-        implementation fg.deobf("maven.modrinth:kimetsunoyaiba-tweaks:1.6.556")
-    }
-
-    tasks.register("knyTweaksEnsureRuntimeDependencies") {
-        doLast {
-            def modsToml = file("src/main/resources/META-INF/mods.toml")
-            if (!modsToml.exists()) {
-                return
-            }
-
-            def text = modsToml.getText("UTF-8")
-            def matcher = text =~ /(?m)^\s*modId\s*=\s*"([^"]+)"/
-            def addonModId = matcher.find() ? matcher.group(1) : "modid"
-            def hasBase = text.contains("modId=\"kimetsunoyaiba\"") || text.contains("modId = \"kimetsunoyaiba\"")
-            def hasTweaks = text.contains("modId=\"kimetsunoyaibamultiplayer\"") || text.contains("modId = \"kimetsunoyaibamultiplayer\"")
-
-            def dependencyBlock = new StringBuilder()
-            if (!hasBase) {
-                dependencyBlock.append("""
-
-    [[dependencies.${addonModId}]]
-        modId="kimetsunoyaiba"
-        mandatory=true
-        versionRange="[1.20.1,)"
-        ordering="AFTER"
-        side="BOTH"
-    """)
-            }
-            if (!hasTweaks) {
-                dependencyBlock.append("""
-
-    [[dependencies.${addonModId}]]
-        modId="kimetsunoyaibamultiplayer"
-        mandatory=true
-        versionRange="[1.6.0,)"
-        ordering="AFTER"
-        side="BOTH"
-    """)
-            }
-
-            if (dependencyBlock.length() > 0) {
-                modsToml.append(dependencyBlock.toString(), "UTF-8")
-            }
-        }
-    }
-
-    tasks.matching { it.name == "processResources" }.configureEach {
-        dependsOn "knyTweaksEnsureRuntimeDependencies"
+        implementation "curse.maven:demonslayer-471263:7151280"
+        implementation "software.bernie.geckolib:geckolib-forge-1.20.1:4.4.9"
+        implementation "maven.modrinth:kimetsunoyaiba-tweaks:1.6.556"
     }

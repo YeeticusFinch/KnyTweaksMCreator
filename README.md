@@ -41,11 +41,11 @@ classes or manually threading MCreator event-bus state through templates.
 ## Runtime dependencies
 
 The `kny_tweaks` API definition adds compile dependencies for Demon Slayer, GeckoLib, and
-Kimetsunoyaiba Tweaks. It also installs a Gradle task that appends mandatory Forge `mods.toml`
+Kimetsunoyaiba Tweaks. The generated addon should still declare mandatory Forge `mods.toml`
 dependencies for:
 
 - `kimetsunoyaiba`
 - `kimetsunoyaibamultiplayer`
 
 This makes missing runtime mods fail as normal Forge dependency errors instead of late class-loading
-errors.
+errors. Add these manually in MCreator until the Java mod-element layer owns dependency generation.
